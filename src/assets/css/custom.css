@@ -1,0 +1,661 @@
+/*
+*-----------------------------------------
+* Theme Name: Geto - HTML App Landing Page
+* Theme URL:http://madbrains.co.in/html-templates/geto/geto-preview.html
+* Author: Madbrains
+* Author URI: http://madbrains.co.in/
+* Creation Date: 23 January 2019
+* Description: A default stylesheet for Geto - HTML App Landing Page
+* Version: 1.0
+*-----------------------------------------
+*/
+
+
+/*
+* ----------------------------------------
+* 01. Common CSS
+* 02. Header CSS
+* 03. Top Banner CSS
+* 04. About Us CSS
+* 05. Advance Feature CSS
+* 06. Price CSS
+* 07. Testimonial CSS
+* 08. FAQ CSS
+* 09. Support CSS
+* 10. Copyright CSS
+* 11. Responsive Css
+* ---------------------------------------
+*/
+
+
+/*
+*----------------------------------------
+* 01. Common CSS
+*----------------------------------------
+*/
+
+:root {
+    --main-color: #6c74e0;
+    --second-color: #7992b1;
+	--black-color: #000;
+}
+
+body {
+	margin:0px;
+	padding:0px;
+	font-family: 'Montserrat', sans-serif;
+	font-size:14px;
+}
+
+a:hover {
+	text-decoration:none;
+}
+
+p {
+	margin-bottom:0px;
+	line-height:24px;
+}
+
+.common {
+	padding:25px 0px;
+	display: block;
+	width:100%;
+}
+
+.common-bg{
+	padding:50px 0px 50px;
+}
+
+.btn {
+    padding: 0 20px;
+    line-height: 50px;
+    text-transform: uppercase;
+    height: 50px;
+	font-size:14px;
+}
+
+.btn-light {
+    color: var(--main-color);
+}
+
+.btn-outline-light {
+    color: #fff;
+}
+
+.section-heading h1 {
+	font-size:36px;
+	font-weight:600;
+	color:var(--black-color);
+	margin-bottom:30px;
+	text-transform:uppercase;
+	font-family: 'Poppins', sans-serif;
+}
+
+.section-heading p {
+    font-size: 14px;
+    color: var(--second-color);
+    width: 60%;
+    margin: 0 auto 30px;
+}
+
+
+/*
+*----------------------------------------
+* 02. Header CSS
+*----------------------------------------
+*/
+
+.custom-menu {
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    padding: 30px 0px 10px;
+	background: var(--main-color);
+}
+
+.custom-menu .navbar-nav .nav-item .nav-link {
+    color: #fff;
+    padding-left: 0px;
+    padding-right: 0px;
+	margin: 0px 16px;
+	border-bottom: 1px solid transparent;
+	text-transform: uppercase;
+}
+
+.custom-menu .navbar-nav .nav-item .nav-link:hover {
+    color: rgba(255,255,255,.9);
+	border-bottom: 1px solid rgba(255,255,255,.9);
+}
+
+.custom-menu .navbar-nav .nav-item.active .nav-link {
+    color: rgba(255,255,255,.9);
+	border-bottom: 1px solid rgba(255,255,255,.9)
+}
+
+.top-banner {
+	background:url(../../assets/images/top.png) no-repeat fixed;
+	background-size: cover;
+    background-position: center center;
+}
+
+.sticky-top {
+    background: var(--main-color);
+    padding: 15px 0px !important;
+	transition: 0.5s;
+}
+
+
+/*
+*----------------------------------------
+* 03. Top Banner CSS
+*----------------------------------------
+*/
+
+.top-banner h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #fff;
+	font-weight: 600;
+}
+
+.top-banner h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.top-banner i {
+	font-size:20px;
+	margin-right:5px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+	width:8%;
+}
+
+
+/*
+*----------------------------------------
+* 04. About Us CSS
+*----------------------------------------
+*/
+
+.about {
+	border:1px solid var(--main-color);
+	padding:54px 27px;
+	text-align:center;
+	border-radius:15px;
+	cursor:pointer;
+	margin-bottom: 30px;
+	transition:.4s;
+}
+
+.about-icon{
+	position:relative;
+	height:100px;
+}
+
+.about-icon img{
+	position:absolute;
+	left:43%;
+}
+
+.about-icon img:last-child{
+	display:none;
+}
+
+.about:hover .about-icon img:last-child{
+	display:inline-block;
+}
+
+.about:hover .about-icon img:first-child{
+	display:none;
+}
+
+.about h4 {
+	font-size:20px;
+	margin-bottom:30px;
+	font-family: 'Poppins', sans-serif;
+	text-transform:uppercase;
+	transition:.4s;
+}
+
+.about p {
+	font-size:14px;
+	color:var(--second-color);
+	line-height: 24px;
+	transition:.4s;
+}
+
+.about:hover{
+	background:var(--main-color);
+}
+
+.about:hover p, .about:hover h4{
+	color:#fff;
+}
+
+
+/*
+*----------------------------------------
+* 05. Advance Feature CSS
+*----------------------------------------
+*/
+
+.advance-feature {
+	background:url(../../assets/images/top.png) no-repeat fixed;
+	background-size: cover;
+    background-position: center center;
+}
+
+.feature-left-wrapper .advance-icon {
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+	float: left;
+    margin-right: 30px;
+	transition:.4s;
+}
+
+.feature-left-wrapper:hover .advance-icon, .feature-right-wrapper:hover .advance-icon{
+		border-radius:25px 25px 25px 0px;
+}
+
+.feature-left-wrapper .advance-text {
+    width: calc(100% - 120px);
+    float: left;
+}
+
+.feature-left-wrapper h4 {
+	color:#fff;
+	font-size:20px;
+	text-transform:uppercase;
+	margin-bottom:20px;
+}
+
+.feature-left-wrapper {
+    margin-bottom: 60px;
+    display: inline-block;
+}
+
+.feature-left-wrapper:last-child {
+    margin-bottom: 0px;
+}
+
+.feature-right-wrapper .advance-icon {
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+	float: left;
+    margin-left: 30px;
+	transition:.4s;
+}
+
+.feature-right-wrapper .advance-text {
+    width: calc(100% - 120px);
+    float: left;
+	text-align:right;
+}
+
+.feature-right-wrapper h4 {
+	color:#fff;
+	font-size:20px;
+	text-transform:uppercase;
+	margin-bottom:20px;
+}
+
+.feature-right-wrapper {
+    margin-bottom: 60px;
+    display: inline-block;
+}
+
+.feature-right-wrapper:last-child {
+    margin-bottom: 0px;
+}
+
+
+
+/*
+*----------------------------------------
+* 06. Price CSS
+*----------------------------------------
+*/
+
+.price {
+	background:#7992b1;
+	padding:40px 0px;
+	text-align:center;
+	position:relative;
+}
+
+.price:before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #7992b1;
+    bottom: -12px;
+    transform: rotate(45deg);
+    left: 47%;
+}
+
+.price p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.price small {
+	font-size:50%;
+	font-weight:300;
+}
+
+.price-offer {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.price h1 {
+	font-weight:600;
+}
+
+.price-offer li {
+    list-style: none;
+    padding: 26px 0;
+    display: block;
+    text-decoration: none;
+    color: var(--second-color);
+    font-size: 16px;
+	background:#e9eff5;
+    line-height: 26px;
+}
+
+.price-offer li:nth-child(odd) {
+	background:#f6f7f8;
+}
+
+.price-offer li a {
+    padding: 0 20px;
+    line-height: 50px;
+    text-transform: uppercase;
+    height: 50px;
+    font-size: 14px;
+	color:var(--second-color);
+	border:1px solid var(--main-color);
+	display:inline-block;
+	border-radius:5px;
+	margin: 8px 0px;
+}
+
+.price.active {
+	background:var(--main-color);
+}
+
+.price.active:before {
+    background: var(--main-color);
+}
+
+.price-offer li a.active {
+	color:#fff;
+	background:var(--main-color);
+}
+
+
+/*
+*----------------------------------------
+* 07. Testimonial CSS
+*----------------------------------------
+*/
+
+.textimoinal-wrapper {
+	background:url(../../assets/images/top.png) no-repeat fixed;
+	background-size: cover;
+    background-position: center center;
+	padding-bottom:80px;
+}
+
+
+/*
+*----------------------------------------
+* 08. FAQ CSS
+*----------------------------------------
+*/
+
+.faq-outer .panel-heading {
+	padding: 0;
+	border:0;
+}
+
+.faq-outer .panel {
+    border: 1px solid #d2d5d9;
+    border-radius: 5px;
+	margin-bottom:30px;
+}
+.faq-outer .panel:last-child {
+	margin-bottom:0px;
+}
+
+.faq-outer .panel-title {
+	margin-bottom:0px;
+}
+
+.faq-outer .panel-title a, .panel-title a:active {
+	display:block;
+	padding: 20px 25px 20px;
+	color:var(--black-color);
+	font-size:15px;
+	font-weight:600;
+	word-spacing:3px;
+	text-decoration:none;
+}
+
+.faq-outer .panel-heading  a:before {
+   font-family: 'FontAwesome';
+   content:"\f107";
+   float: right;
+   transition: all 0.5s;
+   font-size: 24px;
+   margin-top: -5px;
+   color:var(--second-color);
+}
+
+.faq-outer .panel-heading.active a:before {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+ 
+.faq-outer .panel-body {
+	padding:0px 25px 15px;
+	color:var(--second-color);
+    line-height: 25px;
+}
+
+
+/*
+*----------------------------------------
+* 09. Support CSS
+*----------------------------------------
+*/
+
+.support{
+	background:#f6f7f8;
+	background-size: cover;
+    background-position: center center;
+	position:relative;
+}
+.support {
+	background:url(../../assets/images/support.png) no-repeat fixed;
+	background-size: cover;
+    background-position: center center;
+}
+
+.form-group {
+	margin-bottom:17px;
+}
+
+.form-control {
+	height:54px;
+}
+
+.support .btn {
+    line-height: 60px;
+    height: 60px;
+}
+
+.support .btn-outline-primary {
+    color: #fff;
+	border-color:#fff;
+}
+
+.support img {
+    border-radius: 5px;
+}
+
+
+/*
+*----------------------------------------
+* 10. Copyright CSS
+*----------------------------------------
+*/
+
+.copyright {
+	background:#535bb2;
+	padding:30px 0px 25px;
+	color:#fff;
+}
+
+.footer-social i {
+	padding:0px 15px;
+}
+
+
+/*
+*----------------------------------------
+* 11. Responsive CSS
+*----------------------------------------
+*/ 
+
+@media (min-width: 1200px){
+	.container {
+		max-width: 1200px;
+	}
+}
+
+@media (max-width: 991.98px){
+	.navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
+	    padding-right: 15px;
+	    padding-left: 15px;
+	}
+	
+	.custom-menu{
+		padding-top:12px;
+		background:var(--main-color);
+	}
+	
+	.custom-menu .navbar-nav {
+		text-align:center;
+	}
+	
+	.custom-menu .navbar-nav .nav-item.active .nav-link {
+		border-bottom: transparent;
+	}
+	
+	.top-banner h1 {
+		font-size: 30px;
+	}
+	
+	.section-heading h1 {
+		font-size: 24px;
+		margin-bottom: 10px;
+	}
+	
+	.section-heading p {
+		width: 100%;
+		margin: 0 auto 25px;
+	}
+	
+	.price h1 {
+		font-size: 24px;
+	}
+	
+	.common-bg{
+		padding:35px 0px 20px;
+	}
+	
+	.top-banner{
+		margin-top:0px;
+		text-align:center;
+	}
+	
+	.top-banner:before{
+		display:none;
+	}
+	
+	.advance-feature:before {
+		display:none;
+	}
+	
+	.advance-feature:after {
+		display:none;
+	}
+	
+	.textimoinal-wrapper:before {
+		display:none;
+	}
+	
+	.textimoinal-wrapper:after {
+		display:none;
+	}
+	
+	.support:after {
+		display:none;
+		padding:35px 0px 35px;
+	}
+	
+	.feature-right-wrapper:last-child{
+		margin-bottom:0px;
+	}
+	
+	.price-outer {
+		margin-bottom:20px;
+	}
+}
+
+@media (max-width: 768.98px){
+	.copyright p{
+		line-height:40px;
+	}
+}
+
+@media (max-width: 479.98px){
+	.navbar-dark .navbar-brand {
+	    color: rgba(0,0,0,.9);
+	    width: 25%;
+	}
+	
+	.navbar-dark .navbar-brand img{ 
+    	width: 100%;
+	}
+	
+	.btn {
+	    padding: 0 10px;
+	    line-height: 40px;
+	    height: 40px;
+	    font-size: 12px;
+	}
+}
