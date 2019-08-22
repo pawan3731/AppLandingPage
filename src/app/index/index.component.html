@@ -1,0 +1,325 @@
+<app-header></app-header>
+
+<!-- Start Top Banner Area -->
+<div class="row">
+        <ul>
+            <li *ngFor="let item of obj| keyvalue; let i = index">
+                {{item.value}}
+            </li>
+        </ul>
+              
+    <ng-image-slider [images]="imageObject" #nav></ng-image-slider>
+</div>
+<div id="demo" class="carousel slide common-bg top-banner pb-0" data-ride="carousel">
+    <!-- The slideshow -->
+    <div class="container mt-5">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row align-items-center">
+                    <div class="col-md-8 mb-5">
+                        <h3>WELCOME TO THE {{hero}}</h3>
+                        <h1 class="mb-4">Showcase your amazing with this template APP</h1>
+                        <button type="button" class="btn btn-light mr-2"><i class="fa fa-apple"></i> Download</button>
+                        <button type="button" class="btn btn-outline-light "><i class="fa fa-android"></i> Download</button>
+                    </div>
+                    <div class="col-md-4 d-none d-md-block">
+                        <img src="assets/images/banner-phone.png" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row align-items-center">
+                    <div class="col-md-8 mb-5">
+                        <h3>WELCOME TO THE Myapp</h3>
+                        <h1 class="mb-4">Showcase your amazing with this template APP</h1>
+                        <button type="button" class="btn btn-light mr-2"><i class="fa fa-apple"></i> Download</button>
+                        <button type="button" class="btn btn-outline-light "><i class="fa fa-android"></i> Download</button>
+                    </div>
+                    <div class="col-md-4 d-none d-md-block">
+                        <img src="assets/images/banner-phone.png" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row align-items-center">
+                    <div class="col-md-8 mb-5">
+                        <h3>WELCOME TO THE Myapp</h3>
+                        <h1 class="mb-4">Showcase your amazing with this template APP</h1>
+                        <button type="button" class="btn btn-light mr-2"><i class="fa fa-apple"></i> Download</button>
+                        <button type="button" class="btn btn-outline-light "><i class="fa fa-android"></i> Download</button>
+                    </div>
+                    <div class="col-md-4 d-none d-md-block">
+                        <img src="assets/images/banner-phone.png" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+<!-- End Top Banner Area -->
+
+<!-- Start Overview Our App Area -->
+<section class="common-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 section-heading text-center wow fadeInUp">
+                <h1>Overview Our App</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do eiusmod temporut magna aliqua.</p>
+            </div>
+            <div class="col-md-4 wow zoomIn">
+                <div class="about">
+                    <div class="about-icon">
+                        <img src="assets/images/about-icon1.png" alt="">
+                        <img src="assets/images/about-icon6.png" alt="">
+                    </div>
+                    <h4>Creative Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et feugiat mi. Sed lacinia euismod convallis. Nam pharetra aliquam leo, Sed lacinia euismod convallis.</p>
+                </div>
+            </div>
+            <div class="col-md-4 wow zoomIn">
+                <div class="about">
+                    <div class="about-icon">
+                        <img src="assets/images/about-icon4.png" alt="">
+                        <img src="assets/images/about-icon2.png" alt="">
+                    </div>
+                    <h4>Creative Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et feugiat mi. Sed lacinia euismod convallis. Nam pharetra aliquam leo, Sed lacinia euismod convallis.</p>
+                </div>
+            </div>
+            <div class="col-md-4 wow zoomIn">
+                <div class="about">
+                    <div class="about-icon">
+                        <img src="assets/images/about-icon3.png" alt="">
+                        <img src="assets/images/about-icon5.png" alt="">
+                    </div>
+                    <h4>Creative Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et feugiat mi. Sed lacinia euismod convallis. Nam pharetra aliquam leo, Sed lacinia euismod convallis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Overview Our App Area -->
+
+<!-- Start Advance Feature Area -->
+<section class="advance-feature common-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 section-heading text-center wow fadeInUp">
+                <h1 class="text-white">Advanced Feature</h1>
+                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do eiusmod temporut magna aliqua.</p>
+            </div>
+            <div class="col-md-5">
+                <div class="feature-left-wrapper wow fadeInUp">
+                    <div class="advance-icon">
+                        <img src="assets/images/feature-icon1.png" alt="">
+                    </div>
+                    <div class="advance-text">
+                        <h4>Integration</h4>
+                        <p class="text-white">Aenean sollicitudin, lorem quis bibenym text auctor, nisi elit consequat ipsum.</p>
+                    </div>
+                </div>
+                <div class="feature-left-wrapper wow fadeInUp">
+                    <div class="advance-icon">
+                        <img src="assets/images/feature-icon2.png" alt="">
+                    </div>
+                    <div class="advance-text">
+                        <h4>Integration</h4>
+                        <p class="text-white">Aenean sollicitudin, lorem quis bibenym text auctor, nisi elit consequat ipsum.</p>
+                    </div>
+                </div>
+                <div class="feature-left-wrapper wow fadeInUp">
+                    <div class="advance-icon">
+                        <img src="assets/images/feature-icon3.png" alt="">
+                    </div>
+                    <div class="advance-text">
+                        <h4>Integration</h4>
+                        <p class="text-white">Aenean sollicitudin, lorem quis bibenym text auctor, nisi elit consequat ipsum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 px-0 d-none d-md-block wow zoomIn">
+                <img src="assets/images/feature-phone.png" alt="" class="w-100">
+            </div>
+            <div class="col-md-5">
+                <div class="feature-right-wrapper wow fadeInUp">
+                    <div class="advance-text">
+                        <h4>Integration</h4>
+                        <p class="text-white">Aenean sollicitudin, lorem quis bibenym text auctor, nisi elit consequat ipsum.</p>
+                    </div>
+                    <div class="advance-icon">
+                        <img src="assets/images/feature-icon4.png" alt="">
+                    </div>
+                </div>
+                <div class="feature-right-wrapper wow fadeInUp">
+                    <div class="advance-text">
+                        <h4>Integration</h4>
+                        <p class="text-white">Aenean sollicitudin, lorem quis bibenym text auctor, nisi elit consequat ipsum.</p>
+                    </div>
+                    <div class="advance-icon">
+                        <img src="assets/images/feature-icon5.png" alt="">
+                    </div>
+                </div>
+                <div class="feature-right-wrapper wow fadeInUp">
+                    <div class="advance-text">
+                        <h4>Integration</h4>
+                        <p class="text-white">Aenean sollicitudin, lorem quis bibenym text auctor, nisi elit consequat ipsum.</p>
+                    </div>
+                    <div class="advance-icon">
+                        <img src="assets/images/feature-icon6.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Advance Feature Area -->
+
+<!-- Start Our Price Area -->
+<section class="common-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 section-heading text-center wow fadeInUp">
+                <h1>Our Prices</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do eiusmod temporut magna aliqua.</p>
+            </div>
+            <div class="col-md-4 wow zoomIn">
+                <div class="price-outer">
+                    <div class="price">
+                        <p class="text-uppercase text-white font-weight-light">Startup Plan</p>
+                        <h1 class="text-uppercase mb-0 text-white">Free <small>/ Forver</small></h1>
+                    </div>
+                    <ul class="price-offer">
+                        <li>Always Open</li>
+                        <li>Free Tutorial</li>
+                        <li>Email Supports</li>
+                        <li>3 Account</li>
+                        <li><a href="#">Select Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 wow zoomIn">
+                <div class="price-outer">
+                    <div class="price active">
+                        <p class="text-uppercase text-white font-weight-light">enterprise plan</p>
+                        <h1 class="text-uppercase mb-0 text-white">$ 20 <small>/ Month</small></h1>
+                    </div>
+                    <ul class="price-offer">
+                        <li>Always Open</li>
+                        <li>Free Tutorial</li>
+                        <li>Email Supports</li>
+                        <li>3 Account</li>
+                        <li><a href="#" class="active">Select Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 wow zoomIn">
+                <div class="price-outer">
+                    <div class="price">
+                        <p class="text-uppercase text-white font-weight-light">unlimited PLAN</p>
+                        <h1 class="text-uppercase mb-0 text-white">$ 60 <small>/ Month</small></h1>
+                    </div>
+                    <ul class="price-offer">
+                        <li>Always Open</li>
+                        <li>Free Tutorial</li>
+                        <li>Email Supports</li>
+                        <li>3 Account</li>
+                        <li><a href="#">Select Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Our Price Area -->
+
+<!-- Start Free Ask Questions Area -->
+<section class="common-bg" style="background:#f9f9f9;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 section-heading text-center wow fadeInUp">
+                <h1>Free Ask Questions</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do eiusmod temporut magna aliqua.</p>
+            </div>
+            <div class="col-md-4 mt-2 text-center mb-3 wow zoomIn">
+                <img src="assets/images/fag-phone.png" alt="">
+            </div>
+            <div class="col-md-8 faq-outer">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default wow fadeInUp">
+                        <div class="panel-heading active" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Anim pariatur cliche reprehenderit, enim eiusmod
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt</div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default wow fadeInUp">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Leggings occaecat craft beer farm-to-table,
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,</div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default wow fadeInUp">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  Food truck quinoa nesciunt laborum eiusmod.
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default wow fadeInUp">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                  Food truck quinoa nesciunt laborum eiusmod.
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default wow fadeInUp">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                  Food truck quinoa nesciunt laborum eiusmod.
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                            <div class="panel-body">Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Free Ask Questions Area -->
+<app-footer></app-footer>
